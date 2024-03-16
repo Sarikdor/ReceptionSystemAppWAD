@@ -4,6 +4,6 @@
     {
         public int RoomId { get; set; }
         public string RoomType { get; set; }
-        public string RoomStatus { get; set;}
+        public string RoomNum { get; set;}
     }
 }

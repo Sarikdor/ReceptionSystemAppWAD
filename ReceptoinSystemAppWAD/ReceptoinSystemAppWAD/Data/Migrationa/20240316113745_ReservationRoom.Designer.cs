@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReceptoinSystemAppWAD.Data;
 
@@ -11,9 +12,10 @@ using ReceptoinSystemAppWAD.Data;
 namespace ReceptoinSystemAppWAD.Data.Migrationa
 {
     [DbContext(typeof(ReceptionSystemAppDbContext))]
-    partial class ReceptionSystemAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240316113745_ReservationRoom")]
+    partial class ReservationRoom
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -89,7 +91,7 @@ namespace ReceptoinSystemAppWAD.Data.Migrationa
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoomId"), 1L, 1);
 
-                    b.Property<string>("RoomNum")
+                    b.Property<string>("RoomStatus")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

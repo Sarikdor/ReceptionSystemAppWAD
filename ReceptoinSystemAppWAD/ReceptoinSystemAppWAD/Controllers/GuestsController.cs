@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -33,18 +34,15 @@ namespace ReceptoinSystemAppWAD.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Guest>> GetGuest(int id)
         {
-          if (_context.Guests == null)
-          {
-              return NotFound();
-          }
-            var guest = await _context.Guests.FindAsync(id);
+
+            var guest = await _guestRepository.GetSingleGuest(id);
 
             if (guest == null)
             {
                 return NotFound();
             }
 
-            return guest;
+            return Ok(guest);
         }
 
         // PUT: api/Guests/5
@@ -57,65 +55,29 @@ namespace ReceptoinSystemAppWAD.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(guest).State = EntityState.Modified;
+            await _guestRepository.UpdateGuest(guest);
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!GuestExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return NoContent(); 
         }
 
         // POST: api/Guests
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Guest>> PostGuest(Guest guest)
-        {
-          if (_context.Guests == null)
-          {
-              return Problem("Entity set 'ReceptionSystemAppDbContext.Guests'  is null.");
-          }
-            _context.Guests.Add(guest);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetGuest", new { id = guest.GuestId }, guest);
+        {
+            await _guestRepository.CreateGuest(guest);
+
+            return CreatedAtAction("GetBook", new { id = guest.GuestId }, guest);
         }
 
         // DELETE: api/Guests/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteGuest(int id)
         {
-            if (_context.Guests == null)
-            {
-                return NotFound();
-            }
-            var guest = await _context.Guests.FindAsync(id);
-            if (guest == null)
-            {
-                return NotFound();
-            }
-
-            _context.Guests.Remove(guest);
-            await _context.SaveChangesAsync();
+            await _guestRepository.DeleteGuest(id);
 
             return NoContent();
-        }
-
-        private bool GuestExists(int id)
-        {
-            return (_context.Guests?.Any(e => e.GuestId == id)).GetValueOrDefault();
         }
     }
 }
