@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ReceptoinSystemAppWAD.props" />
+</Project>
