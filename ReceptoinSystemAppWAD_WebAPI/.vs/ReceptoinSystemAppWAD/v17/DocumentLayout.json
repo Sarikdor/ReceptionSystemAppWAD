@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|c:\\users\\bekzo\\desktop\\receptionsystemappwad\\receptoinsystemappwad\\receptoinsystemappwad\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|solutionrelative:receptoinsystemappwad\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|c:\\users\\bekzo\\desktop\\receptionsystemappwad\\receptoinsystemappwad\\receptoinsystemappwad\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|solutionrelative:receptoinsystemappwad\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|c:\\users\\bekzo\\desktop\\receptionsystemappwad\\receptoinsystemappwad\\receptoinsystemappwad\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|solutionrelative:receptoinsystemappwad\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|c:\\users\\bekzo\\desktop\\receptionsystemappwad\\receptoinsystemappwad\\receptoinsystemappwad\\controllers\\guestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|solutionrelative:receptoinsystemappwad\\controllers\\guestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|c:\\users\\bekzo\\desktop\\receptionsystemappwad\\receptoinsystemappwad\\receptoinsystemappwad\\repositories\\iguestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E9FB05-B57C-46CC-9137-0563549DA9FF}|ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD.csproj|solutionrelative:receptoinsystemappwad\\repositories\\iguestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 217,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "ReceptoinSystemAppWAD\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "ReceptoinSystemAppWAD\\Controllers\\RoomsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T16:20:14.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "ReceptoinSystemAppWAD\\Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "ReceptoinSystemAppWAD\\Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T16:20:10.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Repositories\\ReservationRepository.cs",
+              "RelativeDocumentMoniker": "ReceptoinSystemAppWAD\\Repositories\\ReservationRepository.cs",
+              "ToolTip": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Repositories\\ReservationRepository.cs",
+              "RelativeToolTip": "ReceptoinSystemAppWAD\\Repositories\\ReservationRepository.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA9wC4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:32:58.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGuestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Repositories\\IGuestRepository.cs",
+              "RelativeDocumentMoniker": "ReceptoinSystemAppWAD\\Repositories\\IGuestRepository.cs",
+              "ToolTip": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Repositories\\IGuestRepository.cs",
+              "RelativeToolTip": "ReceptoinSystemAppWAD\\Repositories\\IGuestRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T19:16:44.427Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 188,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GuestsController.cs",
+              "DocumentMoniker": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Controllers\\GuestsController.cs",
+              "RelativeDocumentMoniker": "ReceptoinSystemAppWAD\\Controllers\\GuestsController.cs",
+              "ToolTip": "C:\\Users\\bekzo\\Desktop\\ReceptionSystemAppWAD\\ReceptoinSystemAppWAD\\ReceptoinSystemAppWAD\\Controllers\\GuestsController.cs",
+              "RelativeToolTip": "ReceptoinSystemAppWAD\\Controllers\\GuestsController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:42:53.588Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
