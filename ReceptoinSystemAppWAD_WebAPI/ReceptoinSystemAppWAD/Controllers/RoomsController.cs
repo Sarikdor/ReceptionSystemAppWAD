@@ -17,6 +17,7 @@ namespace ReceptoinSystemAppWAD.Controllers
     {
         private readonly ReceptionSystemAppDbContext _context;
         private readonly IRoomRepository _roomRepository;
+
         public RoomsController(IRoomRepository roomRepository)
         {
             _roomRepository = roomRepository;
@@ -76,9 +77,6 @@ namespace ReceptoinSystemAppWAD.Controllers
             return NoContent();
         }
 
-        private bool RoomExists(int id)
-        {
-            return (_context.Rooms?.Any(e => e.RoomId == id)).GetValueOrDefault();
-        }
+        
     }
 }

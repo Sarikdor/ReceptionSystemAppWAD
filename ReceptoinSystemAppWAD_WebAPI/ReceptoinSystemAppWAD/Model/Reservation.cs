@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ReceptoinSystemAppWAD.Model
 {
@@ -8,14 +9,15 @@ namespace ReceptoinSystemAppWAD.Model
         public DateTime ReservationDate { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        
-        public int GuestId { get; set; }
-        [ForeignKey("GuestId")]
-        public Guest Guest { get; set; }
 
-        public int RoomId { get; set; }
+        [Required(ErrorMessage = "Guest of reservation is required!")]
+        [ForeignKey("GuestId")]
+        public int? GuestId { get; set; }
+        public Guest? Guest { get; set; }
+        [Required(ErrorMessage = "For Reservation room is required!")]
         [ForeignKey("RoomId")]
-        public Room Room { get; set; }
+        public int? RoomId { get; set; }
+        public Room? Room { get; set; }
 
 
     }

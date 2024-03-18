@@ -22,7 +22,7 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task DeleteGuest(int id)
         {
-            var guest = await _dbContext.Guests.FirstOrDefaultAsync(b => b.GuestId == id);
+            var guest = await _dbContext.Guests.FirstOrDefaultAsync(g => g.GuestId == id);
             if (guest != null)
             {
                 _dbContext.Guests.Remove(guest);
@@ -38,7 +38,7 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task<Guest> GetSingleGuest(int id)
         {
-            var guest = await _dbContext.Guests.SingleOrDefaultAsync(b => b.GuestId == id);
+            var guest = await _dbContext.Guests.SingleOrDefaultAsync(g => g.GuestId == id);
             return guest;
         }
 

@@ -20,7 +20,7 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task DeleteReservation(int id)
         {
-            var reservation = await _dbContext.Reservations.FirstOrDefaultAsync(b => b.ReservationId == id);
+            var reservation = await _dbContext.Reservations.FirstOrDefaultAsync(r => r.ReservationId == id);
             if (reservation != null)
             {
                 _dbContext.Reservations.Remove(reservation);
@@ -30,13 +30,15 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task<IEnumerable<Reservation>> GetAllReservations()
         {
-            var reservation = await _dbContext.Reservations.Include(b => b.RoomId).ToListAsync();
+            var reservation = await _dbContext.Reservations.Include(g => g.GuestId).ThenInclude(r => r.RoomId).ToListAsync();
+           
+
             return reservation;
         }
 
         public async Task<Reservation> GetSingleReservation(int id)
         {
-            var reservation = await _dbContext.Reservations.SingleOrDefaultAsync(b => b.ReservationId == id);
+            var reservation = await _dbContext.Reservations.Include(g => g.GuestId).Include(r => r.RoomId).SingleOrDefaultAsync(r => r.ReservationId == id);
             return reservation;
         }
 

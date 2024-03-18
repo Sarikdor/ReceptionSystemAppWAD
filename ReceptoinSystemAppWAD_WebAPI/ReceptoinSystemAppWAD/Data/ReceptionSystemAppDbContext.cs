@@ -12,5 +12,6 @@ namespace ReceptoinSystemAppWAD.Data
 
         public ReceptionSystemAppDbContext(DbContextOptions<ReceptionSystemAppDbContext> options) : base(options) { }
         
-    }
+
+        }
 }

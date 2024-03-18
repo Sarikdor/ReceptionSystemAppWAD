@@ -15,6 +15,8 @@ builder.Services.AddDbContext<ReceptionSystemAppDbContext>(
             builder.Configuration.GetConnectionString("ReceptionSystemAppConnectionStr")));
 
 builder.Services.AddScoped<IGuestRepository, GuestRepository>();
+builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
+builder.Services.AddScoped<IRoomRepository, RoomRepository>();
 
 
 var app = builder.Build();

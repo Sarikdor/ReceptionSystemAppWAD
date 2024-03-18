@@ -20,7 +20,7 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task DeleteRoom(int id)
         {
-            var room = await _dbContext.Rooms.FirstOrDefaultAsync(b => b.RoomId == id);
+            var room = await _dbContext.Rooms.FirstOrDefaultAsync(r => r.RoomId == id);
             if (room != null)
             {
                 _dbContext.Rooms.Remove(room);
@@ -36,7 +36,7 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task<Room> GetSingleRoom(int id)
         {
-            var room = await _dbContext.Rooms.SingleOrDefaultAsync(b => b.RoomId == id);
+            var room = await _dbContext.Rooms.SingleOrDefaultAsync(r => r.RoomId == id);
             return room;
         }
 

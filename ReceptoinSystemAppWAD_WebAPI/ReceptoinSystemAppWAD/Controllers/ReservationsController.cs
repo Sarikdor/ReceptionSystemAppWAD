@@ -16,11 +16,11 @@ namespace ReceptoinSystemAppWAD.Controllers
     public class ReservationsController : ControllerBase
     {
         private readonly ReceptionSystemAppDbContext _context;
-        private readonly ReservationRepository _reservationRepository;
+        private readonly IReservationRepository _reservationRepository;
 
         public ReservationsController(IReservationRepository reservationRepository)
         {
-            _reservationRepository = (ReservationRepository?)reservationRepository;
+            _reservationRepository = reservationRepository;
         }
 
 
@@ -80,9 +80,5 @@ namespace ReceptoinSystemAppWAD.Controllers
             return NoContent();
         }
 
-        private bool ReservationExists(int id)
-        {
-            return (_context.Reservations?.Any(e => e.ReservationId == id)).GetValueOrDefault();
-        }
     }
 }
