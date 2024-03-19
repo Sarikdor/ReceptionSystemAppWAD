@@ -15,7 +15,7 @@ namespace ReceptoinSystemAppWAD.Controllers
     [ApiController]
     public class RoomsController : ControllerBase
     {
-        private readonly ReceptionSystemAppDbContext _context;
+        
         private readonly IRoomRepository _roomRepository;
 
         public RoomsController(IRoomRepository roomRepository)

@@ -30,7 +30,7 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task<IEnumerable<Reservation>> GetAllReservations()
         {
-            var reservation = await _dbContext.Reservations.Include(g => g.GuestId).ThenInclude(r => r.RoomId).ToListAsync();
+            var reservation = await _dbContext.Reservations.ToListAsync();
            
 
             return reservation;
@@ -38,7 +38,7 @@ namespace ReceptoinSystemAppWAD.Repositories
 
         public async Task<Reservation> GetSingleReservation(int id)
         {
-            var reservation = await _dbContext.Reservations.Include(g => g.GuestId).Include(r => r.RoomId).SingleOrDefaultAsync(r => r.ReservationId == id);
+            var reservation = await _dbContext.Reservations.SingleOrDefaultAsync(r => r.ReservationId == id);
             return reservation;
         }
 

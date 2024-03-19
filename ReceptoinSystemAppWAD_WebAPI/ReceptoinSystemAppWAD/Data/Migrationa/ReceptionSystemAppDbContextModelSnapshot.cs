@@ -46,7 +46,7 @@ namespace ReceptoinSystemAppWAD.Data.Migrationa
 
                     b.HasKey("GuestId");
 
-                    b.ToTable("Guests");
+                    b.ToTable("Guests", (string)null);
                 });
 
             modelBuilder.Entity("ReceptoinSystemAppWAD.Model.Reservation", b =>
@@ -80,7 +80,7 @@ namespace ReceptoinSystemAppWAD.Data.Migrationa
 
                     b.HasIndex("RoomId");
 
-                    b.ToTable("Reservations");
+                    b.ToTable("Reservations", (string)null);
                 });
 
             modelBuilder.Entity("ReceptoinSystemAppWAD.Model.Room", b =>
@@ -101,7 +101,7 @@ namespace ReceptoinSystemAppWAD.Data.Migrationa
 
                     b.HasKey("RoomId");
 
-                    b.ToTable("Rooms");
+                    b.ToTable("Rooms", (string)null);
                 });
 
             modelBuilder.Entity("ReceptoinSystemAppWAD.Model.Reservation", b =>
