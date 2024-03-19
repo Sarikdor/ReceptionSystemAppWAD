@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\ReceptoinSystemAppWAD.props" />
-</Project>
